@@ -62,8 +62,10 @@ export default {
         this.isGameOvered = false;
       },
       changeLevel({level}) {
-        this.level = level
-        this.round = 0
+        this.level = level;
+        this.round = 0;
+        this.correctOrder = [];
+        this.userOrder = [];
       },
       userButtonClick({color}) {
         this.userOrder.push(color);
